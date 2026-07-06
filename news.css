@@ -1,0 +1,352 @@
+/*==================================================
+ NEWS & EVENTS
+==================================================*/
+
+.news{
+
+    padding:90px 20px;
+
+    background:var(--light);
+
+}
+
+.news-header{
+
+    max-width:700px;
+
+    margin:0 auto 50px;
+
+    text-align:center;
+
+}
+
+.news-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    background:#f4e8eb;
+
+    color:var(--primary);
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.news-header h2{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.news-header p{
+
+    color:#666;
+
+}
+
+/*==============================
+ GRID
+==============================*/
+
+.news-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+/*==============================
+ CARD
+==============================*/
+
+.news-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 45px rgba(123,30,43,.15);
+
+}
+
+.news-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.news-content{
+
+    padding:24px;
+
+}
+
+.news-date{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:50px;
+
+    background:#f4e8eb;
+
+    color:var(--primary);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin-bottom:14px;
+
+}
+
+.news-content h3{
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.news-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.news-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/*==============================
+ MOBILE
+==============================*/
+
+@media(max-width:768px){
+
+.news{
+
+padding:70px 18px;
+
+}
+
+.news-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*==================================================
+ RESPONSIVE NEWS
+==================================================*/
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.news{
+
+padding:80px 20px;
+
+}
+
+.news-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.news{
+
+padding:70px 20px;
+
+}
+
+.news-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.news-card img{
+
+height:200px;
+
+}
+
+.news-content{
+
+padding:22px;
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.news{
+
+padding:60px 18px;
+
+}
+
+.news-header{
+
+margin-bottom:35px;
+
+}
+
+.news-header h2{
+
+font-size:2rem;
+
+}
+
+.news-grid{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.news-card{
+
+border-radius:20px;
+
+}
+
+.news-card img{
+
+height:220px;
+
+}
+
+.news-content{
+
+padding:20px;
+
+}
+
+.news-content h3{
+
+font-size:1.3rem;
+
+}
+
+.news-content p{
+
+font-size:.95rem;
+
+}
+
+.news-btn{
+
+font-size:.95rem;
+
+}
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+.news{
+
+padding:50px 15px;
+
+}
+
+.news-header h2{
+
+font-size:1.8rem;
+
+}
+
+.news-card img{
+
+height:180px;
+
+}
+
+.news-content{
+
+padding:18px;
+
+}
+
+.news-content h3{
+
+font-size:1.15rem;
+
+}
+
+.news-content p{
+
+font-size:.9rem;
+
+}
+
+.news-btn{
+
+font-size:.9rem;
+
+}
+
+}

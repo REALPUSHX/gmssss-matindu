@@ -1,0 +1,304 @@
+/*==================================================
+  STYLE.CSS
+  Government Model Sanskriti Senior Secondary School
+==================================================*/
+
+/*==============================
+ GOOGLE FONT
+==============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==============================
+ ROOT VARIABLES
+==============================*/
+
+:root{
+
+    --primary:#7B1E2B;
+    --primary-dark:#5A1620;
+    --secondary:#D4AF37;
+
+    --white:#ffffff;
+    --light:#f8f9fa;
+    --gray:#666666;
+    --dark:#222222;
+
+    --radius:22px;
+
+    --shadow:
+    0 15px 35px rgba(0,0,0,.08);
+
+    --transition:.35s ease;
+
+}
+
+/*==============================
+ RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*==============================
+ HTML
+==============================*/
+
+html{
+    scroll-behavior:smooth;
+}
+
+/*==============================
+ BODY
+==============================*/
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--light);
+
+    color:var(--dark);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+/*==============================
+ LINKS
+==============================*/
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/*==============================
+ LIST
+==============================*/
+
+ul{
+    list-style:none;
+}
+
+/*==============================
+ IMAGE
+==============================*/
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/*==============================
+ BUTTON
+==============================*/
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+/*==============================
+ CONTAINER
+==============================*/
+
+.container{
+
+    width:min(92%,1200px);
+
+    margin:auto;
+
+}
+
+/*==============================
+ SECTION
+==============================*/
+
+section{
+
+    padding:80px 0;
+
+}
+
+/*==============================
+ HEADINGS
+==============================*/
+
+h1{
+
+    font-size:clamp(2.5rem,6vw,4.8rem);
+
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:clamp(2rem,5vw,3rem);
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+}
+
+p{
+
+    color:var(--gray);
+
+}
+
+/*==============================
+ BUTTONS
+==============================*/
+
+.btn-main{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:16px 36px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-main:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+.btn-light{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:16px 36px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.btn-light:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/*==============================
+ GLASS EFFECT
+==============================*/
+
+.glass{
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+/*==============================
+ CARD
+==============================*/
+
+.card{
+
+    background:#fff;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+/*==============================
+ SELECTION
+==============================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==============================
+ SCROLLBAR
+==============================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ececec;
+
+}

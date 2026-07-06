@@ -1,0 +1,338 @@
+/*==================================================
+ FACILITIES SECTION
+==================================================*/
+
+.facilities{
+
+    padding:90px 20px;
+
+    background:var(--light);
+
+}
+
+.facilities-header{
+
+    max-width:700px;
+
+    margin:0 auto 50px;
+
+    text-align:center;
+
+}
+
+.facilities-header span{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#f4e8eb;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.facilities-header h2{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.facilities-header p{
+
+    color:#666;
+
+}
+
+/*==============================
+ GRID
+==============================*/
+
+.facilities-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:24px;
+
+}
+
+/*==============================
+ CARD
+==============================*/
+
+.facility-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.facility-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(123,30,43,.18);
+
+}
+
+/*==============================
+ ICON
+==============================*/
+
+.facility-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 20px;
+
+    border-radius:22px;
+
+    background:linear-gradient(135deg,
+    var(--primary),
+    var(--primary-dark));
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:34px;
+
+}
+
+/*==============================
+ TEXT
+==============================*/
+
+.facility-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.facility-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/*==============================
+ MOBILE
+==============================*/
+
+@media(max-width:768px){
+
+.facilities{
+
+padding:70px 18px;
+
+}
+
+.facilities-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*==================================================
+ RESPONSIVE FACILITIES
+==================================================*/
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.facilities{
+
+padding:80px 20px;
+
+}
+
+.facilities-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.facilities{
+
+padding:70px 20px;
+
+}
+
+.facilities-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.facility-card{
+
+padding:25px;
+
+}
+
+.facility-icon{
+
+width:70px;
+
+height:70px;
+
+font-size:30px;
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.facilities{
+
+padding:60px 18px;
+
+}
+
+.facilities-header{
+
+margin-bottom:35px;
+
+}
+
+.facilities-header h2{
+
+font-size:2rem;
+
+}
+
+.facilities-grid{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.facility-card{
+
+padding:22px;
+
+border-radius:20px;
+
+}
+
+.facility-icon{
+
+width:60px;
+
+height:60px;
+
+font-size:26px;
+
+margin-bottom:15px;
+
+}
+
+.facility-card h3{
+
+font-size:1.3rem;
+
+}
+
+.facility-card p{
+
+font-size:.95rem;
+
+}
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+.facilities{
+
+padding:50px 15px;
+
+}
+
+.facilities-header h2{
+
+font-size:1.8rem;
+
+}
+
+.facility-card{
+
+padding:18px;
+
+}
+
+.facility-icon{
+
+width:55px;
+
+height:55px;
+
+font-size:22px;
+
+}
+
+.facility-card h3{
+
+font-size:1.15rem;
+
+}
+
+.facility-card p{
+
+font-size:.9rem;
+
+}
+
+}

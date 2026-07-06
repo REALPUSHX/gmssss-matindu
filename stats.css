@@ -1,0 +1,300 @@
+/*==================================================
+ STATS SECTION
+==================================================*/
+
+.stats{
+
+    position:relative;
+
+    background:var(--light);
+
+    padding:70px 20px;
+
+}
+
+.stats-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:22px;
+
+}
+
+/*==============================
+ CARD
+==============================*/
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:28px 24px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(123,30,43,.18);
+
+}
+
+/*==============================
+ ICON
+==============================*/
+
+.stat-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 18px;
+
+    border-radius:20px;
+
+    background:linear-gradient(135deg,
+    var(--primary),
+    var(--primary-dark));
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:30px;
+
+}
+
+/*==============================
+ NUMBER
+==============================*/
+
+.stat-card h2{
+
+    font-size:2.2rem;
+
+    color:var(--primary);
+
+    margin-bottom:8px;
+
+    font-weight:800;
+
+}
+
+/*==============================
+ TEXT
+==============================*/
+
+.stat-card p{
+
+    color:#666;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+}
+
+/*==============================
+ MOBILE
+==============================*/
+
+@media(max-width:768px){
+
+.stats{
+
+padding:60px 18px;
+
+}
+
+.stats-container{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.stat-card{
+
+padding:24px;
+
+}
+
+}
+/*==================================================
+ RESPONSIVE STATS
+==================================================*/
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.stats{
+
+padding:80px 20px;
+
+}
+
+.stats-container{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.stats{
+
+padding:70px 20px;
+
+}
+
+.stats-container{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.stat-card{
+
+padding:24px;
+
+}
+
+.stat-icon{
+
+width:65px;
+
+height:65px;
+
+font-size:28px;
+
+}
+
+.stat-card h2{
+
+font-size:2rem;
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.stats{
+
+padding:60px 18px;
+
+}
+
+.stats-container{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.stat-card{
+
+padding:22px;
+
+border-radius:20px;
+
+}
+
+.stat-icon{
+
+width:60px;
+
+height:60px;
+
+font-size:24px;
+
+margin-bottom:16px;
+
+}
+
+.stat-card h2{
+
+font-size:1.8rem;
+
+}
+
+.stat-card p{
+
+font-size:.95rem;
+
+}
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+.stats{
+
+padding:50px 15px;
+
+}
+
+.stat-card{
+
+padding:18px;
+
+}
+
+.stat-icon{
+
+width:55px;
+
+height:55px;
+
+font-size:22px;
+
+}
+
+.stat-card h2{
+
+font-size:1.6rem;
+
+}
+
+.stat-card p{
+
+font-size:.9rem;
+
+}
+
+}

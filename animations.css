@@ -1,0 +1,290 @@
+/*==================================================
+ ANIMATIONS
+==================================================*/
+
+/* Fade Up */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Fade Left */
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-60px);
+
+    animation:fadeLeft .8s ease forwards;
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Fade Right */
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(60px);
+
+    animation:fadeRight .8s ease forwards;
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Zoom In */
+
+.zoom-in{
+
+    opacity:0;
+
+    transform:scale(.8);
+
+    animation:zoomIn .7s ease forwards;
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Floating */
+
+.float{
+
+    animation:floating 3s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Pulse */
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Rotate */
+
+.rotate{
+
+    animation:rotate 12s linear infinite;
+
+}
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+/*==================================================
+ SCROLL REVEAL
+==================================================*/
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+.reveal-left{
+
+opacity:0;
+
+transform:translateX(-60px);
+
+transition:all .8s ease;
+
+}
+
+.reveal-left.active{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+.reveal-right{
+
+opacity:0;
+
+transform:translateX(60px);
+
+transition:all .8s ease;
+
+}
+
+.reveal-right.active{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+.reveal-zoom{
+
+opacity:0;
+
+transform:scale(.9);
+
+transition:all .8s ease;
+
+}
+
+.reveal-zoom.active{
+
+opacity:1;
+
+transform:scale(1);
+
+}
